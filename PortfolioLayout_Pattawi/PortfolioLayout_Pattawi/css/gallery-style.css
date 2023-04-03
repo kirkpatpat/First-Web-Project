@@ -1,0 +1,118 @@
+body {
+    font-family: arial;
+    background-color: #25274d;
+}
+.container{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1FR);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap:10px;
+
+    margin:auto;
+
+    grid-template-areas:
+        "empty header home"
+        "picture course course"
+        "picture description description"
+        "picture description description"
+        "picture2 course2 course2"
+        "picture2 description2 description2"
+        "picture2 description2 description2"
+        "picture3 course3 course3"
+        "picture3 description3 description3"
+        "picture3 description3 description3"
+}
+#container {
+  padding:10px;
+  background-color: #1f2833;
+}
+.empty {
+    grid-area: empty;
+}
+.header {
+    grid-area: header;
+}
+.header h1 {
+    color: #66fcf1;
+    text-align: center;
+    margin-top: 30px;
+}
+.home {
+    grid-area: home;
+}
+button {
+    margin-top: 28px;
+    margin-bottom: -50px;
+    margin-left: 350px;
+}
+hr.new1 {
+    border-color: #45a29e;
+}
+.picture {
+    grid-area: picture;
+}
+.picture, .picture2, .picture3 {
+    border: 2px solid #45a29e;
+}
+.course {
+    grid-area: course;
+}
+.course, .course2, .course3 {
+    color: #66fcf1;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -12px;
+    border: 2px solid #45a29e;
+}
+.description {
+    grid-area: description;
+}
+.description, .description2, .description3 {
+    margin-top: -20px;
+    margin-left: -12px;
+    border-right: 2px solid #45a29e;
+    border-bottom: 2px solid #45a29e;
+    border-left: 2px solid #45a29e;
+}
+.picture2 {
+    grid-area: picture2;
+}
+.course2 {
+    grid-area: course2;
+}
+.description2 {
+    grid-area: description2;
+}
+.picture3 {
+    grid-area: picture3;
+}
+.course3 {
+    grid-area: course3;
+}
+.description3 {
+    grid-area: description3;
+}
+img {
+    height: 300px;
+}
+.center {
+    text-align: center;
+}
+div p {
+    padding: 20px;
+    color: #c5c6c7;
+}
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
